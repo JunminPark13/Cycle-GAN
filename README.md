@@ -50,5 +50,7 @@ Google Cloud Platform을 통해 학습시켰음에도 네트워크 구조가 복
 2. Isola, P., Zhu, J. Y., Zhou, T., & Efros, A. A. (2017). Image-to-image translation with conditional adversarial networks. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 1125-1134).<br>
 3. Zhu, J. Y., Park, T., Isola, P., & Efros, A. A. (2017). Unpaired image-to-image translation using cycle-consistent adversarial networks. In Proceedings of the IEEE international conference on computer vision (pp. 2223-2232).<br>
 4. Chen, Y., Lai, Y. K., & Liu, Y. J. (2018). Cartoongan: Generative adversarial networks for photo cartoonization. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 9465-9474).
+
 <br><br><br>
+
 여담으로 이때까지만 해도 GAN은 이미지 생성에만 쓰인다고 생각했지만, 추후 학교 수업을 통해 data 보호를 위해 가짜 data를 생성할 때 GAN을 사용할 수 있다는 것을 알았다.
