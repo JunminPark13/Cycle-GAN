@@ -10,7 +10,7 @@ Machine Learning과 Deep Learning에 관한 기초만을 배운 상태에서 프
 GAN은 두 개의 네트워크(Generator, Discriminator)를 가지며, Generator는 가짜 이미지를 생성하고 Discriminator는 가짜 이미지와 진짜 이미지를 구분하는 역할을 한다.<br>
 Generator는 Discriminator를 속이는 방향으로 학습하며, Discriminator는 진짜와 가짜를 잘 판별할 수 있는 방향으로 학습한다.
 이 과정을 통해 Generator는 진짜와 비슷한 가짜 사진을 만들어내게 된다.<br>
-<사진>
+![GAN](./img/GAN_Architecture.png)
 
 GAN에 대해서 알아보다보니, Deep Convolutional GAN(DCGAN), Conditional GAN, Cycle GAN 등 여러 종류가 있었다.<br><br>
 
