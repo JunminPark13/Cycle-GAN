@@ -15,23 +15,26 @@ Generator는 Discriminator를 속이는 방향으로 학습하며, Discriminator
 GAN에 대해서 알아보다보니, Deep Convolutional GAN(DCGAN), Conditional GAN, Cycle GAN 등 여러 종류가 있었다.<br><br>
 
 DCGAN은 Convolutional 구조를 GAN에 접목하여 기존의 GAN보다 성능을 크게 높였다.<br>
-<사진> <사진>
+![DCGAN1](./img/DCGAN1.PNG)
+![DCGAN2](./img/DCGAN2.PNG)
 위 사진과 같이 KING - MAN + WOMAN = QUEEN 의 문제를 이미지를 통해 구현이 가능하며, Generator의 input을 조정하여 창문 등을 넣거나 뺄 수 있는 특징이 있다.<br><br>
 
 cGAN은 Generator가 만들어내는 그림에 조건을 걸어 원하는 그림을 생성할 수 있는 특징을 가진다.<br>
-<사진>
+![cGAN](./img/cGAN.png)
 <br>
 Cycle GAN은 Generator, Discriminator 각각 2개씩 가지며, 하나는 스타일 a의 이미지를 스타일 b로, 다른 하나는 스타일 b의 이미지를 스타일 a로 바꾸도록 학습하여 a -> b ->a'를 통한 a'과 a의 차이를 loss로 학습하게된다.<br>
-<그림>
+![CycleGAN1](./img/CycleGAN1.PNG)
 Cycle GAN을 통해 다음과 같은 것들을 할 수 있다고 한다.<br>
-<사진>
+![CycleGAN2](./img/CycleGAN2.png)
 
 여러 GAN 중, Cycle GAN이 팀의 주제에 가장 적절하다고 판단하여 Cycle GAN을 사용하기로 했다.<br><br>
 
 우선, 신카이 마코도 감독의 애니매에션 이미지를 1500장, 실제 건물, 거리, 하늘 사진 등을 1200장 크롤링하였다.<br>
 Cycle GAN을 개발한 연구진의 git-hub를 참고하여 학습 시켰다.<br>
 최종적으로 학습 시킨 Generator에 연세대학교 건물 사진을 입력시켰을 때의 결과는 다음과 같다.<br>
-<사진 2~3개>
+![result1](./img/Result1.PNG)
+![result1](./img/Result2.PNG)
+![result1](./img/Result3.PNG)
 
 Google Cloud Platform을 통해 학습시켰음에도 네트워크 구조가 복잡하여 시간이 굉장히 오래걸렸다.<br>
 이러한 이유로 충분히 학습시키기 어려웠다.<br>
