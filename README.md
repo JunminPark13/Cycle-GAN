@@ -17,6 +17,7 @@ GAN에 대해서 알아보다보니, Deep Convolutional GAN(DCGAN), Conditional 
 DCGAN은 Convolutional 구조를 GAN에 접목하여 기존의 GAN보다 성능을 크게 높였다.<br>
 ![DCGAN1](./img/DCGAN1.PNG)
 ![DCGAN2](./img/DCGAN2.PNG)
+<br>
 위 사진과 같이 KING - MAN + WOMAN = QUEEN 의 문제를 이미지를 통해 구현이 가능하며, Generator의 input을 조정하여 창문 등을 넣거나 뺄 수 있는 특징이 있다.<br><br>
 
 cGAN은 Generator가 만들어내는 그림에 조건을 걸어 원하는 그림을 생성할 수 있는 특징을 가진다.<br>
@@ -36,6 +37,7 @@ Cycle GAN을 개발한 연구진의 git-hub를 참고하여 학습 시켰다.<br
 ![result1](./img/Result2.PNG)
 ![result1](./img/Result3.PNG)
 
+### 한계점
 Google Cloud Platform을 통해 학습시켰음에도 네트워크 구조가 복잡하여 시간이 굉장히 오래걸렸다.<br>
 이러한 이유로 충분히 학습시키기 어려웠다.<br>
 또한, 실제 사진과 애니메이션 스타일 이미지의 피사체 차이가 커서 높은 성능으로 학습시키는데 한계가 있었다. 
